@@ -1,0 +1,5 @@
+
+.global {
+  background: red;
+  color: white;
+}

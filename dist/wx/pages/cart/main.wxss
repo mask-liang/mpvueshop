@@ -1,0 +1,89 @@
+
+.body {
+  background: #f3f3f3;
+  padding: 20rpx 20rpx 100rpx 20rpx;
+}
+.btn-del {
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  color: red;
+  font-size: 50rpx;
+}
+.cart-list-item {
+  position: relative;
+  display: flex;
+  background: #fff;
+  -webkit-border-radius: 30rpx;
+  -moz-border-radius: 30rpx;
+  border-radius: 30rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+.cart-list-item .checked {
+  width: 60rpx;
+  display: flex;
+  align-items: center;
+}
+.cart-list-item .img {
+  margin-right: 10rpx;
+}
+.cart-list-item .img image {
+  width: 175rpx;
+  height: 175rpx;
+}
+.cart-list-item .cart-right {
+  width: 405rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cart-right .title {
+  font-size: 30rpx;
+}
+.cart-right .nums {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-right .nums .price {
+  color: #f00;
+}
+.controls .btn {
+  display: inline-block;
+  width: 45rpx;
+  height: 45rpx;
+  background: #f4f4f4;
+  line-height: 45rpx;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.controls .num {
+  margin: 0 20rpx;
+}
+.payment-bar {
+  position: fixed;
+  background: #fff;
+  left: 0;
+  bottom: 0;
+  width: 710rpx;
+  height: 106rpx;
+  padding: 0 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment-bar .l ._label {
+  margin-right: 25rpx;
+}
+.payment-bar .r {
+  background: #f53e1f;
+  color: #fff;
+  height: 85rpx;
+  line-height: 85rpx;
+  padding: 0 38rpx;
+  -webkit-border-radius: 50rpx;
+  -moz-border-radius: 50rpx;
+  border-radius: 50rpx;
+}

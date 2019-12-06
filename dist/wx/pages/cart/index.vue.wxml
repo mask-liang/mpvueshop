@@ -1,0 +1,26 @@
+<template name="271ca49d">
+  <view class="_div data-v-3cf4f833 body">
+    <view wx:if="{{cartList.length==0}}" class="_div data-v-3cf4f833">空空如也~~</view>
+    <view wx:else class="_div data-v-3cf4f833">
+      <view class="_div data-v-3cf4f833 cart-list-item" wx:key="item._id" key="{{item._id}}" wx:for="{{cartList}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-3cf4f833 btn-del" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}">×</label>
+        <view class="_div data-v-3cf4f833 checked">
+          <switch type="checkbox" checked="{{item.isChecked}}" data-index="{{index}}" bindchange="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" class="_switch data-v-3cf4f833" />
+        </view>
+        <view class="_div data-v-3cf4f833 img">
+          <image src="{{item.picname}}" alt class="_img data-v-3cf4f833"></image>
+        </view>
+        <view class="_div data-v-3cf4f833 cart-right">
+          <view class="_div data-v-3cf4f833 title">{{item.name}}</view>
+          <view class="_div data-v-3cf4f833 nums">
+            <view class="_div data-v-3cf4f833 price">￥{{item.price}}</view>
+            <view class="_div data-v-3cf4f833 controls"><label class="_span data-v-3cf4f833 btn" bindtap="handleProxy" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}">-</label> <label class="_span data-v-3cf4f833 num">{{item.nums}}</label> <label class="_span data-v-3cf4f833 btn" bindtap="handleProxy" data-eventid="{{'3_'+index}}" data-comkey="{{$k}}">+</label></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-3cf4f833 payment-bar">
+      <view class="_div data-v-3cf4f833 l"><label class="_label data-v-3cf4f833">
+          <switch type="checkbox" checked="{{isAllChecked}}" bindchange="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_switch data-v-3cf4f833" />全选 </label> <text class="_text data-v-3cf4f833">合计：￥{{ totalPrice }}</text></view> <text class="_text data-v-3cf4f833 r" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}">结算({{ totalNum }})</text>
+    </view>
+  </view>
+</template>

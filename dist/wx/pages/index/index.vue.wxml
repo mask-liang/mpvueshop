@@ -1,0 +1,22 @@
+<template name="eaaa6c5e">
+  <view class="_div data-v-6b277275 body">
+    <swiper class="_swiper data-v-6b277275 banner_swiper" indicator-dots indicator-active-color="#fff">
+      <swiper-item wx:key="item" key="{{item}}" wx:for="{{banners}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-6b277275">
+        <image src="{{item}}" alt class="_img data-v-6b277275"></image>
+      </swiper-item>
+    </swiper>
+    <view class="_div data-v-6b277275 product-type">
+      <view class="_div data-v-6b277275 type-item" wx:key="item._id" key="{{item._id}}" wx:for="{{types}}" wx:for-index="index" wx:for-item="item">
+        <image src="{{item.picname}}" alt class="_img data-v-6b277275"></image> <label class="_span data-v-6b277275">{{item.name}}</label>
+      </view>
+    </view>
+    <view class="_div data-v-6b277275 index-ad">
+      <image src="/static/ad/1.jpg" alt class="_img data-v-6b277275"></image>
+    </view>
+    <view class="_div data-v-6b277275 index-product-list">
+      <view class="_div data-v-6b277275 product-list {{(index + 1) % 3 == 0 ? 'lNob' : ''}}" wx:key="item._id" key="{{item._id}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{products}}" wx:for-index="index" wx:for-item="item"><text class="_text data-v-6b277275">{{item.name}}</text>
+        <image src="{{item.picname}}" alt class="_img data-v-6b277275"></image>
+      </view>
+    </view>
+  </view>
+</template>

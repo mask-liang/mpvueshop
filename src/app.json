@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/main",
+    "pages/cart/main",
+    "pages/detail/main",
+    "pages/my/main"
+  ],
+  "window":{
+    "navigationBarTitleText":"我们mpvue开发小程序"
+  },
+  "tabBar":{
+    "selectedColor":"#f00",
+    "list":[
+      {
+        "pagePath":"pages/index/main",
+        "text":"首页",
+        "iconPath":"static/tabs/index.png",
+        "selectedIconPath":"static/tabs/indexFull.png"
+      },{
+        "pagePath":"pages/cart/main",
+        "text":"购物车",
+        "iconPath":"static/tabs/cart.png",
+        "selectedIconPath":"static/tabs/cartFull.png"
+      },{
+        "pagePath":"pages/my/main",
+        "text":"我的",
+        "iconPath":"static/tabs/my.png",
+        "selectedIconPath":"static/tabs/myFull.png"
+      }
+    ]
+  }
+}

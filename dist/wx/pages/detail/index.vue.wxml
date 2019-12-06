@@ -1,0 +1,23 @@
+<template name="2da80e64">
+  <view class="_div data-v-538eee24 body">
+    <view class="_div data-v-538eee24 thumb-img">
+      <image src="{{productDetail.picname}}" alt class="_img data-v-538eee24"></image>
+    </view>
+    <view class="_div data-v-538eee24 product-detail">
+      <view class="_div data-v-538eee24 product-title">{{productDetail.name}} <label class="_span data-v-538eee24">价格：{{productDetail.price}}</label></view>
+      <view class="_div data-v-538eee24 product-info">{{productDetail.desc}}</view>
+    </view>
+    <view class="_div data-v-538eee24 product-shopping">
+      <view class="_div data-v-538eee24 shopping-store">
+        <view class="_div data-v-538eee24 ico-store ico">
+          <image src="/static/detail/ico-store.jpg" alt class="_img data-v-538eee24"></image> <text class="_text data-v-538eee24">店铺</text>
+        </view>
+        <view class="_div data-v-538eee24 ico-cart ico">
+          <image src="/static/detail/ico-shopping-cart.jpg" alt class="_img data-v-538eee24"></image> <text bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_text data-v-538eee24">购物车</text>
+        </view>
+      </view>
+      <view class="_div data-v-538eee24 shopping-buy"> 立即购买 </view>
+      <view class="_div data-v-538eee24 shopping-add-cart" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"> 加入购物车 </view>
+    </view>
+  </view>
+</template>
